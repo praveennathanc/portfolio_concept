@@ -280,7 +280,7 @@ function Home() {
 <footer>
     <div className="f-content">
     <div className="aboutus">
-        <h1>LOGO</h1>
+        <h1>LARA</h1>
         <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
         <div className="s-icons">
         <Link1 to="/dummy"><FaFacebookSquare/></Link1>
