@@ -6,12 +6,16 @@ import women from '../Component/Images/woman.png';
 import{BiCodeAlt,BiImage,BiLayout,BiVector,BiChevronLeft,BiChevronRight} from 'react-icons/bi';
 import {FaFacebookSquare,FaBehanceSquare,FaInstagram,FaDribbbleSquare,FaTwitterSquare} from 'react-icons/fa';
 import 'react-bootstrap';
+import WeatherApi from './WeatherApi';
+
+
 
 function Home() {
 
     const[nav,setNav] =useState(true)
     const [mouseX,setMouseX] =useState(null)
     const[mouseY,setMouseY] =useState(null)
+ 
 
     window.addEventListener('mousemove',(e)=>
     {
@@ -22,8 +26,12 @@ function Home() {
     const handler=()=>{
         setNav(!nav)
     }
+  
+  
     return (
         <>
+     
+       
             <div className="navbar">
                 <div className="nav-logo">
                 <img src="https://img.icons8.com/color/35/000000/google-tag-manager.png" alt="logo"/>
@@ -233,34 +241,34 @@ function Home() {
 
 
           
+            <WeatherApi></WeatherApi>
 
 
-
-            <div id="demo" class="carousel slide" data-ride="carousel">
+            <div id="demo" className="carousel slide" data-ride="carousel">
 
                         <div className="testimonial">
                             <p>MY</p>
                             <h1>TESTIMONIAL</h1>
                         </div>
-<ul class="carousel-indicators">
-  <li data-target="#demo" data-slide-to="0" class="active"></li>
+<ul className="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" className="active"></li>
   <li data-target="#demo" data-slide-to="1"></li>
   <li data-target="#demo" data-slide-to="2"></li>
 </ul>
 
 
-<div class="carousel-inner">
-  <div class="carousel-item active">
+<div className="carousel-inner">
+  <div className="carousel-item active">
     <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="face" className="c-img"></img>
     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
     <b>-JHON</b>
   </div>
-  <div class="carousel-item">
+  <div className="carousel-item">
   <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="face" className="c-img"></img>
   <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
     <b>-SARA</b>
   </div>
-  <div class="carousel-item">
+  <div className="carousel-item">
   <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="face" className="c-img"></img>
   <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
     <b>-SARA</b>
@@ -268,13 +276,14 @@ function Home() {
 </div>
 
 
-<a class="carousel-control-prev" href="#demo" data-slide="prev">
+<a className="carousel-control-prev" href="#demo" data-slide="prev">
   <span className="c-left"><BiChevronLeft/></span>
 </a>
-<a class="carousel-control-next" href="#demo" data-slide="next">
+<a className="carousel-control-next" href="#demo" data-slide="next">
   <span className="c-right"><BiChevronRight/></span>
 </a>
-</div>
+</div>  
+
 
 
 <footer>
@@ -302,8 +311,12 @@ function Home() {
         <Link1 to="/dummy">Skills</Link1>
         <Link1 to="/dummy">My Works</Link1>
         <Link1 to="/dummy">What I Do</Link1>
-    </div>
+    </div>  
+ 
+      
 </footer>
+
+
 
 
 
