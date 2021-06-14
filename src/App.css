@@ -541,7 +541,7 @@ footer
   align-items: center;
   flex-direction: column;
   color: white;
-  padding: 30px;
+  padding: 30px ;
 }
 .api-c
 {
@@ -550,4 +550,29 @@ footer
   background-color: red;
   padding: 40px;
   margin-top: 30px;
+}
+
+.weatherContainer
+{
+  width:100%;
+  height: auto;
+  background-color: #21094e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.temp h2{
+  display: inline-block;
+  margin: 20px;
+}
+.weatherDetails
+{
+  background-color: red;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px;
 }
